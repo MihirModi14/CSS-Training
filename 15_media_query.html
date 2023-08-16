@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 30px;
+            background-color: grey;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+
+        h2 {
+            display: none;
+        }
+
+        /* smartphone */
+        @media(max-width: 500px) {
+            body {
+                background-color: red;
+            }
+
+            #Mobile h2 {
+                display: block;
+                color: white;
+            }
+        }
+
+        /* smartphone */
+        @media(min-width: 501px) and (max-width: 768px) {
+            body {
+                background-color: blue;
+            }
+
+            #Tablet h2 {
+                display: block;
+                color: white;
+            }
+        }
+
+        /* smartphone */
+        @media(min-width: 769px) and (max-width: 1200px) {
+            body {
+                background-color: aqua;
+            }
+
+            #Computer h2 {
+                display: block;
+                color: white;
+            }
+        }
+
+        /* smartphone */
+        @media(min-width: 1200px){
+            body {
+                background-color: brown;
+            }
+
+            #Widescreen h2 {
+                display: block;
+                color: white;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Widescreen"><h2>widescreen</h2></div>
+    <div id="Computer"><h2>Computer</h2></div>
+    <div id="Tablet"><h2>Tablet</h2></div>
+    <div id="Mobile"><h2>Mobile</h2></div>
+</body>
+</html>

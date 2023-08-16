@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #main {
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .box {
+            background-color: antiquewhite;
+            margin-top: 10px;
+            border: 3px solid red;
+            padding: 10px;
+        }
+
+        #div2 {
+            float: left;
+            width: 68%;
+        }
+
+        #div3 {
+            float: right;
+            width: 30%;
+        }
+
+        #div4 {
+            clear: both;
+            display: inline-block;
+        }
+
+        .container {
+            display: inline-block;
+            width: 68%;
+
+        }
+
+        #eagle {
+            display: inline-block;
+        }
+
+        #div5 {
+            margin-top: 5px;
+        }
+
+        img {
+            width: 30%;
+            float: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis delectus reiciendis neque iste
+                sint asperiores repudiandae atque doloremque modi!</p>
+        </div>
+        <div id="div2" class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sequi rerum error commodi perferendis
+                architecto itaque, numquam nemo adipisci hic.</p>
+        </div>
+
+        <div id="div3" class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere est consequuntur accusamus earum et
+                deserunt cupiditate, expedita reiciendis eos beatae.</p>
+        </div>
+        <div id="div4" class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere est consequuntur accusamus earum et
+                deserunt cupiditate, expedita reiciendis eos beatae.</p>
+        </div>
+
+        <div class="container">
+            <div id="eagle" class="box">Eagle</div>
+            <div id="div5" class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate porro corporis amet sed velit
+                ad esse quos vel veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint et corrupti
+                eveniet maxime vero modi quidem unde quod porro.</p>
+            </div>
+        </div>
+        <img src="/HTML/Images/eagle.jpg" alt="Eagle Image">
+    </section>
+</body>
+
+</html>

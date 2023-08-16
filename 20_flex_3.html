@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex - 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #main {
+            width: 100vw;
+            flex-direction: row;
+            height: 50vh;
+            display: flex;
+            align-self: center;
+        }
+        #main div {
+            flex-basis: 100px;
+        }
+
+        #main div:nth-of-type(2){
+            flex-basis: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div style="background-color:blue;">Blue</div>
+        <div style="background-color:red;">Red</div>
+        <div style="background-color:orange;">Orange</div>
+        <div style="background-color:pink;">Pink</div>
+        <div style="background-color:aqua;">Aqua</div>
+    </div>
+</body>
+</html>
