@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Media Queries</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-gap: 1rem;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2,auto);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: repeat(1,auto);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                </p>
+        </div>
+    </div>
+</body>
+</html>

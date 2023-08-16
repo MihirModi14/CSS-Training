@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container {
+            display: grid;
+            text-align: center;
+            grid-template-areas: 
+            'header header header'
+            'content content sidebar'
+            'box-1 box-1 box-2'
+            'box-3 box-3 box-3'
+            'footer footer footer';
+            gap: 10px;
+        }
+        .header{
+            grid-area: header;
+        }
+
+        .content{
+            grid-area: content;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+        }
+        
+        .box-1{
+            grid-area: box-1;
+        }
+        
+        .box-2{
+            grid-area: box-2;
+        }
+
+        .box-3{
+            grid-area: box-3;
+        }
+
+        .footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .header,.content,.sidebar,
+        .box-1,.box-2,.box-3 {
+            border: #ccc 1px solid;
+            padding: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas: 
+                'header'
+                'content'
+                'sidebar'
+                'box-1'
+                'box-2'
+                'box-3'
+                'footer';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>My Website</h1>
+        </header>
+        <section class="content">
+            <h3>Welcome To My site</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus fugit sunt nihil
+                quibusdam beatae nostrum magni, voluptatibus a. Voluptatem, consectetur deserunt architecto aspernatur
+                sunt omnis a. Neque, quaerat necessitatibus! Ipsam laboriosam, labore delectus ducimus minima cumque,
+                dolorum vero aliquam in perspiciatis doloribus nihil. Repellendus esse ex soluta officia totam.</p>
+        </section>
+        <aside class="sidebar">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Some Company</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>555-555-5555</li>
+            </ul>
+        </aside>
+        <div class="box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                facere! Odio quis, ex ut dicta aspernatur tenetur eum vitae impedit saepe hic explicabo error.
+                Distinctio nemo modi expedita non quia ducimus deleniti mollitia?</p>
+        </div>
+        <div class="box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                facere! Odio quis, ex ut dicta aspernatur tenetur eum vitae impedit saepe hic explicabo error.
+                Distinctio nemo modi expedita non quia ducimus deleniti mollitia?</p>
+        </div>
+        <div class="box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio, minima voluptatibus enim
+                fugiat repellendus voluptate sed quos, amet necessitatibus animi recusandae et nemo delectus iusto
+                facere! Odio quis, ex ut dicta aspernatur tenetur eum vitae impedit saepe hic explicabo error.
+                Distinctio nemo modi expedita non quia ducimus deleniti mollitia?</p>
+        </div>
+    </div>
+    <footer class="footer"><p>Copyright &copy; 2019</p></footer>
+</body>
+
+</html>
