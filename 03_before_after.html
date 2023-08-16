@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After Selectors</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .is-required::after {
+            content: '*';
+            padding-left: 2px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header > h1 {
+            font-size: 50px;
+        }
+
+        header::before {
+            content: '';
+            background: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-blue-splash-water-flower-cosmetic-psd-layered-master-map-background-material-image_149650.jpg')
+            no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, enim.</p>
+    </header><br>
+
+    <label for="name" class="is-required">Name</label>
+    <input type="text" placeholder="Enter Name"><br>
+
+</body>
+
+</html>

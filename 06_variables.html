@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root {
+            --max-width: 1300px;
+            --primary-color: steelblue;
+            --secondary-color: skyblue;
+            --light-color: #f4f4f4;
+            --text-color: #fff;
+
+            --box-1-width: 2;
+            --box-2-width: 1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background-color: var(--light-grey);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            border-bottom: 5px solid var(--secondary-color);
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            max-width: var(--max-width);
+        }
+
+        .box {
+            margin: 20px 10px;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        .box-1 {flex: var(--box-1-width);}
+        .box-2 {flex: var(--box-2-width);}
+        
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1>CSS Variables</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim autem doloremque doloribus
+                voluptatem placeat!</p>
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi nobis aspernatur dolore in
+                enim!</p>
+        </div>
+    </div>
+</body>
+
+</html>
